@@ -115,6 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.cpp" />
+    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\main.cpp" />
+    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.h" />
+    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

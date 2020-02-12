@@ -12,4 +12,23 @@
       <UniqueIdentifier>{712863e0-900a-439c-a1d9-1389522db25e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.cpp">
+      <Filter>sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\main.cpp">
+      <Filter>sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.cpp">
+      <Filter>sourse</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
