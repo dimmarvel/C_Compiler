@@ -13,22 +13,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.cpp">
+    <ClCompile Include="Lex_analyzer.cpp">
       <Filter>sourse</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>sourse</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.cpp">
+    <ClCompile Include="parser.cpp">
       <Filter>sourse</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.h">
-      <Filter>headers</Filter>
+    <ClInclude Include="Lex_analyzer.h">
+      <Filter>sourse</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.h">
-      <Filter>headers</Filter>
+    <ClInclude Include="parser.h">
+      <Filter>sourse</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

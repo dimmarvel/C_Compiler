@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lex_analyzer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="parser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lex_analyzer.h" />
+    <ClInclude Include="parser.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E5E78250-ABC9-4B0E-811D-F4BCE371531A}</ProjectGuid>
@@ -114,15 +123,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.cpp" />
-    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\main.cpp" />
-    <ClCompile Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\Lex_analyzer.h" />
-    <ClInclude Include="..\..\Try wrote my recursive parser\Try wrote my recursive parser\parser.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
