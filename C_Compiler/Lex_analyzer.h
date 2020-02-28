@@ -135,5 +135,5 @@ token_lexeme get_next_token();				/*
 TOKENS token_definition();					/*
 ќпределение каким токеном €вл€етс€ лексема*/
 void TOKEN_definition(token_lexeme tk);
-template<class T> T TOKEN_definition(token_lexeme tk);
-template<> string TOKEN_definition(token_lexeme tk);
+template<typename T> T TOKEN_definition(token_lexeme tk);
+template<> void TOKEN_definition(token_lexeme tk);

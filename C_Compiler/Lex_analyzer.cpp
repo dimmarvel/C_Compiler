@@ -54,6 +54,9 @@ token_lexeme get_next_token()
 				if (isKeyword(temp_token)) {
 					stopped_index = ++keyword_index;
 					temp_token_lexeme.value = temp_token;
+					string temp_IDENTIFIER = token;
+					temp_IDENTIFIER.erase(temp_IDENTIFIER.size()-1, 1);
+					cout << "IDENTIFIER (" + temp_IDENTIFIER + ")"<< endl;
 					return temp_token_lexeme;
 				}
 				
@@ -91,16 +94,27 @@ TOKENS token_definition(){
 template<> string TOKEN_definition(token_lexeme tk) {
 	switch (tk.lexeme) {
 	case OPEN_BRACE:
+		tk.token_string = "OPEN_BRACE";
 	case CLOSE_BRACE:
+		tk.token_string = "CLOSE_BRACE";
 	case OPEN_PARENTHESIS:
+		tk.token_string = "OPEN_PARENTHESIS";
 	case CLOSE_PAREN:
+		tk.token_string = "CLOSE_PAREN";
 	case SEMICOLON:
+		tk.token_string = "SEMICOLON";
 	case INT_KEYWORD:
+		tk.token_string = "INT_KEYWORD";
 	case RETURN_KEYWORD:
+		tk.token_string = "RETURN_KEYWORD";
 	case IDENTIFIER:
+		tk.token_string = "IDENTIFIER";
 	case INTEGER_LITERAL:
+		tk.token_string = "INTEGER_LITERAL";
 	case STRING_LITERAL:
+		tk.token_string = "STRING_LITERAL";
 	case END_OF_FILE:
+
 	default:
 		cout << "Not found lexeme." << endl;
 		return "UNDEFIND";
