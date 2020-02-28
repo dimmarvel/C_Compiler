@@ -3,20 +3,29 @@
 void C_parser(string input_code)
 {
 	set_input_stream(input_code);
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-	cout << get_next_token() << endl;
-
+	token_lexeme tk;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
+	tk = get_next_token();
+	cout << tk.value << ", " << tk.lexeme << endl;
 }
