@@ -2,6 +2,15 @@
 #include "Lex_analyzer.h"
 #define DEBUG
 
+vector <token_lexeme> token_lexeme_vec;			/*
+							Хранит набор спаршеных токен-лексем*/
+uint keyword_index;								/*
+							Текущий индекс парсинга.*/
+string input_code;								/*
+							Здесь хранится код на языке С.*/
+uint stopped_index;								/*
+							Хранит значение символа на котором остановился парсер.*/
+
 void set_keyword_index(uint index)
 {
 	keyword_index = index;
@@ -46,8 +55,10 @@ token_lexeme get_next_token()
 					string temp_IDENTIFIER = token;
 					temp_IDENTIFIER.erase(temp_IDENTIFIER.size() - 1, 1);
 					if (temp_IDENTIFIER != "") {
-
+						temp_token_lexeme.lexeme = IDENTIFIER;
+						temp_token_lexeme.value = temp_IDENTIFIER;
 						cout << "IDENTIFIER (" + temp_IDENTIFIER + ")" << endl;
+						stopped_index = keyword_index -= 2;
 					}
 					return temp_token_lexeme;
 				}
@@ -79,8 +90,8 @@ token_lexeme get_next_token()
 #endif
 	return temp_token_lexeme;
 }
-void token_definition(token_lexeme tl) {
-	if (tl.lexeme != UNDEFIND) {
+void token_definition(token_lexeme& tl) {
+	if (true) { //(tl.lexeme != UNDEFIND)
 		if (tl.value == "(") 
 		{
 			tl.lexeme = OPEN_BRACE;
@@ -116,8 +127,13 @@ void token_definition(token_lexeme tl) {
 			tl.lexeme = RETURN_KEYWORD;
 			tl.token_string = "RETURN_KEYWORD";
 		}
+		else if (tl.lexeme == IDENTIFIER)
+		{
+			tl.token_string = "IDENTIFIER";
+		}
 		else {
 			tl.lexeme = UNDEFIND;
+			tl.token_string = "UNDEFIND";
 		}
 	}
 }

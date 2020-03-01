@@ -7,16 +7,17 @@ using namespace std;
 
 typedef unsigned int uint;
 typedef string KeywordsLexeme;
-enum TOKENS;
 struct token_lexeme;
-static vector <token_lexeme> token_lexeme_vec;	/*
+
+extern vector <token_lexeme> token_lexeme_vec;			/*
 							Хранит набор спаршеных токен-лексем*/
-static uint keyword_index;						/*
+extern uint keyword_index;								/*
 							Текущий индекс парсинга.*/
-static string input_code;						/*
+extern string input_code;								/*
 							Здесь хранится код на языке С.*/
-static uint stopped_index;						/*
+extern uint stopped_index;								/*
 							Хранит значение символа на котором остановился парсер.*/
+
 
 /*
 Ключевые слова\символы\сочетания символов*/
@@ -138,5 +139,5 @@ bool isKeyword(string word);				/*
 Является ли входящяя строка токеном*/
 token_lexeme get_next_token();				/*
 Получить следующий токен*/
-void token_definition(token_lexeme tl);		/*
+void token_definition(token_lexeme& tl);		/*
 Определение каким токеном является лексема*/
