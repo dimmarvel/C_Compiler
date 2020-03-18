@@ -13,24 +13,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lex_analyzer.cpp">
+    <ClCompile Include="temp.cpp">
       <Filter>sourse</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Application.cpp">
       <Filter>sourse</Filter>
     </ClCompile>
-    <ClCompile Include="parser.cpp">
+    <ClCompile Include="LexicalAnalyzer.cpp">
+      <Filter>sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
       <Filter>sourse</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lex_analyzer.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="parser.h">
-      <Filter>headers</Filter>
-    </ClInclude>
     <ClInclude Include="Limits.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LexicalAnalyzer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
       <Filter>headers</Filter>
     </ClInclude>
   </ItemGroup>

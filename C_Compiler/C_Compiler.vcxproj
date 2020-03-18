@@ -19,14 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lex_analyzer.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="parser.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="LexicalAnalyzer.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="temp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lex_analyzer.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="LexicalAnalyzer.h" />
     <ClInclude Include="Limits.h" />
-    <ClInclude Include="parser.h" />
+    <ClInclude Include="Parser.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

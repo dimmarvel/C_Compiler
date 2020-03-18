@@ -1,7 +1,6 @@
-#include "parser.h"
+#include "Definitions.h"
 
 int main(int argc, char **argv) {
-	string code = {"int some->arr>= ++ inline get next do else -- main(){return 0;}"};
-	C_parser(code);
+	ofstream ofstr("code.txt");
 	system("pause");
 }
